@@ -1,4 +1,4 @@
-name: Build Android APK
+name: 构建Flutter应用 (Android + Web)
 
 on:
   push:
@@ -35,6 +35,9 @@ jobs:
       - name: 构建Release APK
         run: flutter build apk --release
       
+      - name: 构建Web版本
+        run: flutter build web --release
+      
       - name: 上传Debug APK
         uses: actions/upload-artifact@v4
         with:
@@ -46,3 +49,9 @@ jobs:
         with:
           name: app-release
           path: build/app/outputs/flutter-apk/app-release.apk
+      
+      - name: 上传Web版本
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-build
+          path: build/web/
