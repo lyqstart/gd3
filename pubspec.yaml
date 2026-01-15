@@ -1,0 +1,72 @@
+name: pipeline_calculation_app
+description: 油气管道开孔封堵计算APP - 专业的工程计算工具
+
+# 应用版本信息
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.35.0"
+
+# 依赖包配置
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # 状态管理
+  provider: ^6.1.1
+  
+  # 数据库
+  sqflite: ^2.3.0
+  mysql1: ^0.20.0
+  
+  # 文件导出
+  pdf: ^3.10.7
+  excel: ^2.1.0
+  
+  # 文件操作
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # 网络请求
+  http: ^1.1.0
+  connectivity_plus: ^5.0.2
+  
+  # UI组件
+  cupertino_icons: ^1.0.6
+  
+  # 工具库
+  uuid: ^4.2.1
+  crypto: ^3.0.3
+  
+  # 文件分享
+  share_plus: ^7.2.2
+  intl: ^0.19.0
+  shared_preferences: ^2.2.2
+  
+  # 设备信息
+  device_info_plus: ^9.1.0
+  package_info_plus: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # 代码分析
+  flutter_lints: ^3.0.0
+  
+  # 测试工具
+  test: ^1.24.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.7
+  sqflite_common_ffi: ^2.3.0
+
+# Flutter配置
+flutter:
+  uses-material-design: true
+  
+  # 应用图标和启动画面
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/help/

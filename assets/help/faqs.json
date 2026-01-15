@@ -1,0 +1,72 @@
+[
+  {
+    "id": "faq_001",
+    "question": "为什么计算结果出现负数？",
+    "answer": "计算结果出现负数通常是因为输入参数不合理。常见原因包括：1）管内径大于外径；2）筒刀内径大于外径；3）T值小于W值导致螺纹咬合尺寸为负；4）E值计算错误（管外径小于壁厚）。请仔细检查输入参数的合理性，确保所有尺寸关系正确。",
+    "tags": ["计算错误", "参数验证", "负数结果"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug"]
+  },
+  {
+    "id": "faq_002",
+    "question": "如何选择合适的筒刀规格？",
+    "answer": "筒刀规格选择需要考虑以下因素：1）筒刀外径应小于管道内径，留有足够的切削余量；2）筒刀内径应根据开孔尺寸要求选择；3）筒刀长度要满足切削深度要求；4）筒刀材质要适合管道材质；5）参考设备技术手册的推荐规格。建议根据管道直径选择标准规格的筒刀。",
+    "tags": ["设备选择", "筒刀规格", "开孔工具"],
+    "relatedCalculationTypes": ["CalculationType.hole"]
+  },
+  {
+    "id": "faq_003",
+    "question": "计算精度如何保证？",
+    "answer": "应用采用高精度数学运算，计算误差控制在0.1mm以内。为确保精度：1）使用精确的测量工具（精度±0.1mm）；2）多点测量取平均值；3）仔细核对输入参数；4）考虑温度对尺寸的影响；5）定期校准测量工具；6）对重要计算进行手工验算。",
+    "tags": ["计算精度", "测量准确性", "质量控制"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug", "CalculationType.stem"]
+  },
+  {
+    "id": "faq_004",
+    "question": "参数单位如何统一？",
+    "answer": "应用默认使用毫米（mm）作为长度单位。输入参数时请确保：1）所有长度尺寸使用毫米；2）如果测量数据是英寸，请先转换为毫米（1英寸=25.4毫米）；3）使用应用内置的单位转换功能；4）保存参数组时注明单位；5）导出报告时会显示使用的单位。",
+    "tags": ["单位转换", "参数输入", "数据格式"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug", "CalculationType.stem"]
+  },
+  {
+    "id": "faq_005",
+    "question": "如何保存和管理参数组？",
+    "answer": "参数组管理功能帮助您保存常用的参数组合：1）在计算页面输入参数后，点击"保存参数组"按钮；2）为参数组起一个有意义的名称；3）可以按计算类型分类管理；4）使用时从参数组列表中选择并加载；5）可以编辑或删除不需要的参数组；6）参数组会自动同步到云端（如果启用）。",
+    "tags": ["参数管理", "数据保存", "用户设置"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug", "CalculationType.stem"]
+  },
+  {
+    "id": "faq_006",
+    "question": "应用可以离线使用吗？",
+    "answer": "是的，应用的核心计算功能完全支持离线使用：1）所有计算逻辑都在本地执行；2）参数组和计算记录保存在本地数据库；3）离线状态下可以正常进行所有类型的计算；4）网络恢复后会自动同步数据到云端；5）离线时无法使用云端同步和在线帮助更新功能。",
+    "tags": ["离线功能", "网络连接", "数据同步"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug", "CalculationType.stem"]
+  },
+  {
+    "id": "faq_007",
+    "question": "计算结果如何导出和分享？",
+    "answer": "应用提供多种导出和分享方式：1）PDF报告：包含完整的参数、公式和结果；2）Excel表格：适合批量数据分析；3）图片格式：包含示意图的计算结果；4）可以通过邮件、微信等方式分享；5）支持批量导出历史计算记录；6）导出文件包含时间戳和计算详情。",
+    "tags": ["数据导出", "结果分享", "报告生成"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug", "CalculationType.stem"]
+  },
+  {
+    "id": "faq_008",
+    "question": "示意图有什么作用？",
+    "answer": "示意图帮助您直观理解计算过程和结果：1）显示关键尺寸的位置关系；2）标注重要的测量点和计算结果；3）帮助验证参数输入的正确性；4）便于现场作业人员理解；5）可以包含在导出的报告中；6）支持缩放查看细节。示意图是计算结果的重要补充。",
+    "tags": ["示意图", "可视化", "作业指导"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug", "CalculationType.stem"]
+  },
+  {
+    "id": "faq_009",
+    "question": "如何处理特殊工况？",
+    "answer": "对于特殊工况，建议：1）仔细分析工况特点，确定关键参数；2）参考类似工况的历史数据；3）咨询有经验的技术人员；4）进行小范围试验验证；5）适当增加安全余量；6）详细记录特殊参数的来源和依据；7）建立特殊工况的参数库。",
+    "tags": ["特殊工况", "参数确定", "安全余量"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug", "CalculationType.stem"]
+  },
+  {
+    "id": "faq_010",
+    "question": "应用数据如何备份？",
+    "answer": "应用提供多重数据保护：1）本地SQLite数据库自动保存；2）云端MySQL数据库实时同步；3）可以手动导出所有计算记录；4）参数组会自动备份到云端；5）建议定期导出重要数据；6）更换设备时可以通过账号恢复数据；7）支持数据完整性检查和修复。",
+    "tags": ["数据备份", "数据安全", "数据恢复"],
+    "relatedCalculationTypes": ["CalculationType.hole", "CalculationType.manualHole", "CalculationType.sealing", "CalculationType.plug", "CalculationType.stem"]
+  }
+]

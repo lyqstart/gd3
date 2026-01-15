@@ -1,0 +1,242 @@
+{
+  "hole_calculation_tutorial": {
+    "id": "hole_calculation_tutorial",
+    "title": "开孔尺寸计算教程",
+    "description": "学习如何正确进行开孔尺寸计算，掌握参数测量和计算流程",
+    "calculationType": "CalculationType.hole",
+    "estimatedMinutes": 15,
+    "steps": [
+      {
+        "title": "准备工作",
+        "description": "准备必要的测量工具和安全设备。确保工作环境安全，检查测量工具的精度和校准状态。",
+        "imagePath": null,
+        "tips": [
+          "准备卡尺、内径卡尺、测径器等测量工具",
+          "确保测量工具精度满足要求（±0.1mm）",
+          "检查工具校准状态，必要时重新校准",
+          "佩戴安全防护用品",
+          "确认管道压力已释放，作业区域安全"
+        ]
+      },
+      {
+        "title": "测量管道参数",
+        "description": "准确测量管道的外径和内径。选择合适的测量位置，进行多点测量以确保精度。",
+        "imagePath": null,
+        "tips": [
+          "在管道圆周上选择3-4个点测量外径",
+          "测量位置应垂直于管道轴线",
+          "多点测量取平均值以提高精度",
+          "注意管道表面防腐层的影响",
+          "记录测量温度，考虑热胀冷缩",
+          "如无法直接测量内径，可查阅管道技术资料"
+        ]
+      },
+      {
+        "title": "测量筒刀参数",
+        "description": "测量筒刀的外径和内径，检查筒刀的完整性和精度。",
+        "imagePath": null,
+        "tips": [
+          "使用卡尺测量筒刀外径",
+          "使用内径卡尺测量筒刀内径",
+          "检查筒刀是否有磨损或变形",
+          "确保筒刀规格与管道匹配",
+          "记录筒刀的型号和规格",
+          "新筒刀使用前需要检查尺寸"
+        ]
+      },
+      {
+        "title": "测量设备参数",
+        "description": "测量开孔设备的各项关键参数，包括A值、B值、R值等。",
+        "imagePath": null,
+        "tips": [
+          "确保设备处于标准工作位置",
+          "测量中心钻到联箱口的距离（A值）",
+          "测量夹板顶到管外壁的距离（B值）",
+          "测量中心钻尖到筒刀的距离（R值）",
+          "记录设备的初始值和垫片厚度",
+          "考虑设备的制造公差和安装误差"
+        ]
+      },
+      {
+        "title": "输入参数到应用",
+        "description": "在应用中输入测量得到的各项参数，注意单位统一和数值准确性。",
+        "imagePath": null,
+        "tips": [
+          "仔细核对输入数值的准确性",
+          "确保所有参数使用统一的单位（mm）",
+          "利用参数帮助功能确认参数含义",
+          "保存参数组合以便后续使用",
+          "检查参数的合理性范围"
+        ]
+      },
+      {
+        "title": "查看和验证结果",
+        "description": "查看计算结果，重点关注关键尺寸，并进行合理性验证。",
+        "imagePath": null,
+        "tips": [
+          "重点关注空行程和开孔总行程",
+          "检查计算结果的合理性",
+          "对比历史类似工况的数据",
+          "保存计算记录以备查阅",
+          "必要时进行手工验算",
+          "查看示意图确认理解正确"
+        ]
+      }
+    ]
+  },
+  "manual_hole_tutorial": {
+    "id": "manual_hole_tutorial",
+    "title": "手动开孔计算教程",
+    "description": "学习手动开孔机的参数设置和尺寸计算方法",
+    "calculationType": "CalculationType.manualHole",
+    "estimatedMinutes": 12,
+    "steps": [
+      {
+        "title": "了解手动开孔机",
+        "description": "熟悉手动开孔机的结构和工作原理，了解各参数的物理意义。",
+        "imagePath": null,
+        "tips": [
+          "查阅设备技术手册",
+          "了解设备的技术参数",
+          "熟悉设备的操作流程",
+          "检查设备的完好性",
+          "了解螺纹规格和类型"
+        ]
+      },
+      {
+        "title": "参数测量和确定",
+        "description": "根据设备技术参数和现场测量，确定L、J、P、T、W等关键参数。",
+        "imagePath": null,
+        "tips": [
+          "参考设备说明书确定L、J、P值",
+          "测量螺纹长度确定T值",
+          "测量螺纹深度确定W值",
+          "确保T值大于W值",
+          "记录设备型号和规格",
+          "检查螺纹的完整性"
+        ]
+      },
+      {
+        "title": "计算和验证",
+        "description": "进行手动开孔尺寸计算，验证螺纹咬合尺寸的合理性。",
+        "imagePath": null,
+        "tips": [
+          "计算螺纹咬合尺寸 = T - W",
+          "计算空行程 = L + J + T + W",
+          "计算总行程 = L + J + T + W + P",
+          "检查螺纹咬合尺寸是否为正值",
+          "保存计算结果",
+          "如果出现负值，检查T和W参数"
+        ]
+      }
+    ]
+  },
+  "sealing_tutorial": {
+    "id": "sealing_tutorial",
+    "title": "封堵计算教程",
+    "description": "学习封堵和解堵作业的尺寸计算方法",
+    "calculationType": "CalculationType.sealing",
+    "estimatedMinutes": 10,
+    "steps": [
+      {
+        "title": "准备封堵设备",
+        "description": "检查封堵设备的完整性，确认设备参数。",
+        "imagePath": null,
+        "tips": [
+          "检查封堵器的完好性",
+          "确认封堵器规格与管道匹配",
+          "准备合适的垫片",
+          "检查导向轮的状态",
+          "确认封堵器的密封性能"
+        ]
+      },
+      {
+        "title": "参数测量",
+        "description": "测量和计算封堵作业所需的各项参数。",
+        "imagePath": null,
+        "tips": [
+          "测量或计算E值（管外径-壁厚）",
+          "确定R值、B值、D值",
+          "测量垫片厚度",
+          "确定设备初始值",
+          "确保E值不为负数"
+        ]
+      },
+      {
+        "title": "封堵计算",
+        "description": "进行封堵尺寸计算，确保计算结果的准确性。",
+        "imagePath": null,
+        "tips": [
+          "计算导向轮接触管线行程",
+          "计算封堵总行程",
+          "验证E值不能为负数",
+          "封堵和解堵使用相同计算逻辑",
+          "检查计算结果的合理性"
+        ]
+      }
+    ]
+  },
+  "plug_tutorial": {
+    "id": "plug_tutorial",
+    "title": "下塞堵计算教程",
+    "description": "学习下塞堵作业的参数设置和计算方法",
+    "calculationType": "CalculationType.plug",
+    "estimatedMinutes": 8,
+    "steps": [
+      {
+        "title": "了解下塞堵设备",
+        "description": "熟悉下塞堵设备的结构和参数含义。",
+        "imagePath": null,
+        "tips": [
+          "查阅设备技术手册",
+          "了解M、K、N参数的物理意义",
+          "检查设备的完好性",
+          "确认螺纹规格"
+        ]
+      },
+      {
+        "title": "参数确定和计算",
+        "description": "确定各项参数并进行下塞堵尺寸计算。",
+        "imagePath": null,
+        "tips": [
+          "根据设备参数确定M、K、N值",
+          "测量螺纹参数T、W值",
+          "计算螺纹咬合尺寸和各项行程",
+          "检查计算结果是否合理",
+          "如出现负值，检查参数设置"
+        ]
+      }
+    ]
+  },
+  "stem_tutorial": {
+    "id": "stem_tutorial",
+    "title": "下塞柄计算教程",
+    "description": "学习下塞柄作业的尺寸计算方法",
+    "calculationType": "CalculationType.stem",
+    "estimatedMinutes": 6,
+    "steps": [
+      {
+        "title": "参数确定",
+        "description": "确定下塞柄计算所需的各项参数。",
+        "imagePath": null,
+        "tips": [
+          "根据设备参数确定F、G、H值",
+          "测量垫片厚度",
+          "确定设备初始值",
+          "检查参数的合理性"
+        ]
+      },
+      {
+        "title": "计算总行程",
+        "description": "进行下塞柄总行程计算。",
+        "imagePath": null,
+        "tips": [
+          "计算总行程 = F + G + H + 垫片厚度 + 初始值",
+          "检查计算结果精度（保持小数点后2位）",
+          "验证结果的合理性",
+          "保存计算记录"
+        ]
+      }
+    ]
+  }
+}

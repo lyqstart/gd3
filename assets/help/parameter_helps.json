@@ -1,0 +1,308 @@
+{
+  "outerDiameter": {
+    "parameterName": "outerDiameter",
+    "displayName": "管外径",
+    "description": "管道的外部直径尺寸，是计算开孔尺寸的基础参数",
+    "measurementMethod": "使用卡尺或测径器测量管道外壁的直径，在管道圆周上选择3-4个点测量，取平均值",
+    "example": "219.1",
+    "unit": "mm",
+    "valueRange": "50-1000mm",
+    "notes": [
+      "确保测量位置垂直于管道轴线",
+      "多点测量取平均值以提高精度",
+      "注意管道表面的防腐层厚度",
+      "记录测量温度，考虑热胀冷缩影响"
+    ]
+  },
+  "innerDiameter": {
+    "parameterName": "innerDiameter",
+    "displayName": "管内径",
+    "description": "管道的内部直径尺寸，用于计算筒刀切削距离",
+    "measurementMethod": "使用内径卡尺测量管道内壁的直径，或通过外径减去两倍壁厚计算",
+    "example": "203.2",
+    "unit": "mm",
+    "valueRange": "40-950mm",
+    "notes": [
+      "内径必须小于外径",
+      "注意管道内壁的腐蚀情况",
+      "考虑管道内壁结垢对内径的影响",
+      "如无法直接测量，可查阅管道技术资料"
+    ]
+  },
+  "cutterOuterDiameter": {
+    "parameterName": "cutterOuterDiameter",
+    "displayName": "筒刀外径",
+    "description": "筒刀的外部直径尺寸，影响切削距离计算",
+    "measurementMethod": "使用卡尺测量筒刀外壁的直径，测量筒刀最大直径处",
+    "example": "25.4",
+    "unit": "mm",
+    "valueRange": "10-50mm",
+    "notes": [
+      "选择合适规格的筒刀",
+      "检查筒刀是否有磨损",
+      "确保筒刀规格与管道匹配",
+      "新筒刀使用前需要检查尺寸"
+    ]
+  },
+  "cutterInnerDiameter": {
+    "parameterName": "cutterInnerDiameter",
+    "displayName": "筒刀内径",
+    "description": "筒刀的内部直径尺寸，用于计算掉板弦高",
+    "measurementMethod": "使用内径卡尺测量筒刀内壁的直径",
+    "example": "19.1",
+    "unit": "mm",
+    "valueRange": "8-45mm",
+    "notes": [
+      "内径必须小于外径",
+      "确保筒刀内壁光滑",
+      "检查筒刀内径是否有变形",
+      "测量时注意筒刀的锥度"
+    ]
+  },
+  "a": {
+    "parameterName": "a",
+    "displayName": "A值(中心钻关联联箱口)",
+    "description": "中心钻到联箱口的距离，影响空行程计算",
+    "measurementMethod": "测量中心钻尖端到联箱口边缘的直线距离",
+    "example": "15.0",
+    "unit": "mm",
+    "valueRange": "5-50mm",
+    "notes": [
+      "确保测量基准点准确",
+      "考虑设备安装误差",
+      "测量时设备应处于工作位置",
+      "记录测量时的环境条件"
+    ]
+  },
+  "b": {
+    "parameterName": "b",
+    "displayName": "B值(夹板顶到管外壁)",
+    "description": "夹板顶部到管道外壁的距离",
+    "measurementMethod": "测量夹板顶面到管道外壁表面的垂直距离",
+    "example": "12.5",
+    "unit": "mm",
+    "valueRange": "5-30mm",
+    "notes": [
+      "确保夹板安装牢固",
+      "测量时保持垂直",
+      "考虑夹板的变形",
+      "检查夹板与管道的贴合度"
+    ]
+  },
+  "r": {
+    "parameterName": "r",
+    "displayName": "R值(中心钻尖到筒刀)",
+    "description": "中心钻尖端到筒刀的距离",
+    "measurementMethod": "测量中心钻尖端到筒刀前端的直线距离",
+    "example": "8.0",
+    "unit": "mm",
+    "valueRange": "3-20mm",
+    "notes": [
+      "确保中心钻和筒刀对齐",
+      "检查设备装配精度",
+      "测量时设备应处于标准位置",
+      "考虑设备的制造公差"
+    ]
+  },
+  "initialValue": {
+    "parameterName": "initialValue",
+    "displayName": "初始值",
+    "description": "设备的初始位置偏移量",
+    "measurementMethod": "根据设备说明书或现场测量确定",
+    "example": "5.0",
+    "unit": "mm",
+    "valueRange": "0-15mm",
+    "notes": [
+      "参考设备技术参数",
+      "考虑温度补偿",
+      "不同设备型号可能有不同的初始值",
+      "定期校准设备零点"
+    ]
+  },
+  "gasketThickness": {
+    "parameterName": "gasketThickness",
+    "displayName": "垫片厚度",
+    "description": "密封垫片的厚度",
+    "measurementMethod": "使用千分尺测量垫片厚度，多点测量取平均值",
+    "example": "3.0",
+    "unit": "mm",
+    "valueRange": "1-10mm",
+    "notes": [
+      "选择合适材质的垫片",
+      "检查垫片是否完整",
+      "考虑垫片的压缩量",
+      "不同工况可能需要不同厚度的垫片"
+    ]
+  },
+  "l": {
+    "parameterName": "l",
+    "displayName": "L值",
+    "description": "手动开孔机的L值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "25.0",
+    "unit": "mm",
+    "valueRange": "10-100mm",
+    "notes": [
+      "参考设备说明书",
+      "不同型号设备L值不同",
+      "定期检查设备参数"
+    ]
+  },
+  "j": {
+    "parameterName": "j",
+    "displayName": "J值",
+    "description": "手动开孔机的J值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "18.0",
+    "unit": "mm",
+    "valueRange": "5-50mm",
+    "notes": [
+      "参考设备说明书",
+      "考虑设备磨损对参数的影响"
+    ]
+  },
+  "p": {
+    "parameterName": "p",
+    "displayName": "P值",
+    "description": "手动开孔机的P值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "30.0",
+    "unit": "mm",
+    "valueRange": "15-80mm",
+    "notes": [
+      "参考设备说明书",
+      "不同工况可能需要调整P值"
+    ]
+  },
+  "t": {
+    "parameterName": "t",
+    "displayName": "T值",
+    "description": "螺纹相关的T值参数",
+    "measurementMethod": "测量螺纹长度或根据螺纹规格确定",
+    "example": "20.0",
+    "unit": "mm",
+    "valueRange": "10-50mm",
+    "notes": [
+      "确保螺纹规格正确",
+      "检查螺纹是否完整"
+    ]
+  },
+  "w": {
+    "parameterName": "w",
+    "displayName": "W值",
+    "description": "螺纹相关的W值参数",
+    "measurementMethod": "测量螺纹深度或根据螺纹规格确定",
+    "example": "15.0",
+    "unit": "mm",
+    "valueRange": "5-40mm",
+    "notes": [
+      "确保螺纹规格正确",
+      "W值必须小于T值"
+    ]
+  },
+  "d": {
+    "parameterName": "d",
+    "displayName": "D值",
+    "description": "封堵计算中的D值参数",
+    "measurementMethod": "根据封堵设备技术参数确定",
+    "example": "45.0",
+    "unit": "mm",
+    "valueRange": "20-100mm",
+    "notes": [
+      "参考封堵设备说明书",
+      "不同封堵器D值不同"
+    ]
+  },
+  "e": {
+    "parameterName": "e",
+    "displayName": "E值(管外径-壁厚)",
+    "description": "管外径减去壁厚的计算值",
+    "measurementMethod": "E值 = 管外径 - 壁厚，或直接测量",
+    "example": "210.0",
+    "unit": "mm",
+    "valueRange": "40-950mm",
+    "notes": [
+      "E值不能为负数",
+      "壁厚数据要准确",
+      "考虑管道腐蚀对壁厚的影响"
+    ]
+  },
+  "m": {
+    "parameterName": "m",
+    "displayName": "M值",
+    "description": "下塞堵计算中的M值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "35.0",
+    "unit": "mm",
+    "valueRange": "15-80mm",
+    "notes": [
+      "参考设备说明书",
+      "不同设备M值不同"
+    ]
+  },
+  "k": {
+    "parameterName": "k",
+    "displayName": "K值",
+    "description": "下塞堵计算中的K值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "22.0",
+    "unit": "mm",
+    "valueRange": "10-60mm",
+    "notes": [
+      "参考设备说明书",
+      "K值影响空行程计算"
+    ]
+  },
+  "n": {
+    "parameterName": "n",
+    "displayName": "N值",
+    "description": "下塞堵计算中的N值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "28.0",
+    "unit": "mm",
+    "valueRange": "12-70mm",
+    "notes": [
+      "参考设备说明书",
+      "N值影响总行程计算"
+    ]
+  },
+  "f": {
+    "parameterName": "f",
+    "displayName": "F值",
+    "description": "下塞柄计算中的F值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "40.0",
+    "unit": "mm",
+    "valueRange": "20-100mm",
+    "notes": [
+      "参考设备说明书",
+      "F值是塞柄长度的重要参数"
+    ]
+  },
+  "g": {
+    "parameterName": "g",
+    "displayName": "G值",
+    "description": "下塞柄计算中的G值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "25.0",
+    "unit": "mm",
+    "valueRange": "10-60mm",
+    "notes": [
+      "参考设备说明书",
+      "G值影响塞柄总行程"
+    ]
+  },
+  "h": {
+    "parameterName": "h",
+    "displayName": "H值",
+    "description": "下塞柄计算中的H值参数",
+    "measurementMethod": "根据设备技术参数或现场测量确定",
+    "example": "18.0",
+    "unit": "mm",
+    "valueRange": "8-50mm",
+    "notes": [
+      "参考设备说明书",
+      "H值是塞柄计算的关键参数"
+    ]
+  }
+}
